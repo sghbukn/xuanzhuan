@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图标圆形</title>
+	<style>
+		header {
+	width: 600px;
+	height: 150px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+
+.box img {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	-webkit-transition: -webkit-transform 1s ease-out;
+    -moz-transition: -moz-transform 1s ease-out;
+    -o-transition: -o-transform 1s ease-out;
+    -ms-transition: -ms-transform 1s ease-out;
+}
+
+.box img:hover {
+	-webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+	</style>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+	<header>
+		<div class="box">
+			<img src="http://img08.jiuxian.com/2016/0928/a267701ff76844fdb81b2f3fe2facc802.jpg" alt="1">
+		</div>
+		<div class="box">
+			<img src="http://img09.jiuxian.com/2016/0331/03c13aa80c9c4dc0b9a5a6c72b04b7752.jpg" alt="2">
+		</div>
+		<div class="box">
+			<img src="http://img06.jximage.com/2017/0505/366723438eec44e3ac5ce6d565d5c3262.jpg" alt="3">
+		</div>
+		<div class="box">
+			<img src="http://img06.jximage.com/2016/0127/c5bb02d8b9a1417cb880b9c6619ad8802.jpg" alt="4">
+		</div>
+	</header>
+</body>
+</html>
